@@ -40,8 +40,8 @@ def get_base64_image(path):
         encoded = base64.b64encode(img_file.read()).decode()
     return f"data:image/png;base64,{encoded}"
 
-# 請修改成你自己的圖片路徑
-image_path = r"C:\\Users\\Ava\\Desktop\\國泰\\image.png"
+# 修改為相對路徑
+image_path = "image.png"
 img_base64 = get_base64_image(image_path)
 
 st.set_page_config(page_title="國泰人壽 - 用戶行為預測工具", layout="centered", initial_sidebar_state="collapsed")
